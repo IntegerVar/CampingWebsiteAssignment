@@ -1,0 +1,740 @@
+/* Loading of fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* Defining basic page layout */
+* {
+	font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+/* Plugins */
+
+/* Google Maps */
+
+iframe {
+	width: 90%;
+	height: 300px;
+	display: block;
+}
+
+/* Weather Widget */
+
+.weatherwidget-io {
+	position: relative;
+	width: 500px;
+	left: 19px;
+}
+
+/* Facebook Like */
+
+#facebookLike {
+	height: 20px;
+}
+
+#logo {
+	position: relative;
+	bottom: 5px;
+	height: 50px;
+	width: 50px;
+}
+
+/* Footer Styling */
+footer {
+	text-align: center;
+	border-top:30px;
+	border-top: 1px solid black;
+	padding-top: 3px;
+}
+footer > * {
+	width:33%;
+}
+
+footer p {
+	margin-top: 4px;
+}
+
+/* Table-Based Layouts */
+
+table, th, td {
+  border-collapse: collapse;
+
+}
+table {
+	width: 30%;
+}
+
+#basketTable {
+	width: 80%;
+	margin-bottom: 16px;
+}
+
+#basketReset {
+	display: flex;
+}
+
+caption {
+	border: inherit;
+	border-bottom-style: none;
+}
+
+#invisibleRow {
+	display: none;
+}
+
+/* Texts and Navigation Based Layouts */
+
+/* Bundled text-based properties */
+
+a, legend, label, h3, button, #submit, #submitForumIssue{
+	color: black;
+	font-size: 0.9em;
+}
+
+/* Bundling of font weight */
+a, legend, label, caption, button, #submit, #submitForumIssue, #postIdentifier, .bottomMinorComment, .contentWrapper > *, .userPost > p:first-of-type, #memberContainer > * p, .aboutUsParagraph, #modalWelcome > * p:first-of-type, .campingBrief, #search-wrapper > * > * > * input[type="submit"] {
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:active, a:hover, a:visited {
+	color: black;
+}
+
+strong {
+	font-weight: inherit;
+}
+
+nav li {
+	list-style-type: none;
+	border: 2px solid #6cc251;
+}
+
+h1 {
+	clear: both;
+}
+
+article h2, section h1, #reviewTitle {
+	padding: 8px 8px 8px 8px;
+	width: 200px;
+	background-color: #bee8c9;
+	font-size:0.95em;
+}
+
+.longTitle {
+	width: 300px;
+}
+
+.shortTitles {
+	width: 100px;
+}
+
+/* Modal */
+
+#modalWelcome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.65);
+}
+
+#modalWelcome > * {
+	box-shadow: 10px 10px 20px black;
+	padding: 50px;
+}
+
+#modalWelcome > * p:last-of-type {
+	font-size: 0.8em;
+}
+
+/* Slideshow */
+
+.slideshowWrapper {
+	width: 80%;
+}
+
+.slideshow {
+	flex-direction: column;
+}
+
+.slideshowPhoto ~ .slideshowPhoto {
+	display: none;
+}
+
+.prev, .next {
+	position: relative;
+	background-color: black;
+	height: 30px;
+	width: 30px;
+}
+
+/* Positions for first displayed photo, replaced by code */
+
+.prev {
+	right: 203px;
+	top: 155px;
+}
+
+.next {
+	left: 203px;
+	bottom: 155px;
+}
+
+/* Product Search */
+
+#search-wrapper > * > * > * input[type="text"]{
+	font-size: 1.05em;
+}
+
+#search-wrapper > * > * > * input[type="submit"] {
+	height: 33px;
+}
+
+#search-bar-wrapper {
+	justify-content: center;
+}
+
+#search-icon {
+	position: relative;
+	top: 60px;
+	left: 225px;
+	margin-top: 5px;
+	transition: transform .5s ease-in;
+}
+
+#search-form {
+	display: none;
+}
+
+/* Product Layouts */
+
+figure {
+	flex-flow: column;
+}
+
+.product {
+	position: relative;
+	border: 1px solid black;
+	width: 390px;
+	height: 550px;
+	margin-right:30px;
+}
+
+/* Removes the extra margin proper center alignment */
+.product:last-of-type, .phoneNavLi:last-of-type {
+	margin-right: 0px;
+}
+
+article button {
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	transform: translate(-50%, -50%);
+}
+/* Form Layouts */
+
+form {
+	width: 90%;
+}
+
+fieldset p:first-of-type {
+	font-size:1.2em;
+}
+
+fieldset {
+	margin-top:20px;
+}
+
+legend {
+	padding: 8px 10px;
+}
+
+input[type="radio"] {
+	appearance: none;
+	font: inherit;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	transform: translateY(0.15em);
+}
+
+input[type="checkbox"] {
+	appearance: none;
+	font: inherit;
+	width: 1em;
+	height: 1em;
+	border-radius: 15%;
+	transform: translateY(0.35em);
+}
+
+label[for^="yes"], label[for^="no"] {
+	font-weight: normal;
+	margin-top:-5px;
+}
+
+textarea {
+	resize: none;
+	width: 400px;
+	height: 50px;
+}
+
+#submit, #submitForumIssue{
+	margin-left: 10px;
+	padding: 8px 30px;
+}
+
+#submit {
+	position: relative;
+	left: 0px;
+	transform: translate(0%, 0%);
+}
+
+/* Forum Layouts */
+
+#forumPostContainer {
+	width: 82%;
+}
+
+#postIdentifier {
+	width: 100%;
+	height: 50px;
+	margin-bottom:15px;
+}
+
+.forumPost {
+	width: 95%;
+}
+
+.reviewProductText {
+	white-space: nowrap;
+}
+
+.contentWrapper {
+	text-align: center;
+	height: inherit;
+}
+
+.contentWrapper > * {
+	margin-right: 35px;
+}
+
+.imageContainer img {
+	position: relative;
+	top: 5px;
+}
+
+/* Bundling of content width */
+
+.contentWrapper > *:not(img), .imageContainer {
+	width: 126px;
+}
+
+#forumPostTitle {
+	margin-bottom: 5px;
+	width: 500px;
+}
+
+#comments {
+	width: 95%;
+}
+
+.commentContainer {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userPost {
+	width: 30%;
+	margin-right: 1%;
+}
+
+.userPost img {
+	margin-right: 10px;
+}
+
+.userComment {
+	width: 69%;
+}
+
+/* Camping Club Content */
+
+#membOptions {
+	width: 280px;
+}
+
+#memberContainer > * {
+	width:300px;
+	height:250px;
+}
+
+#memberContainer > * ul {
+	list-style-type: none;
+}
+
+/* About Us Page */
+
+#aboutUs > * {
+	width:300px;
+	height:250px;
+}
+
+.aboutUsParagraph {
+	margin-top: -15px;
+	font-size: 0.95em;
+}
+
+/* Bundled class for frequently used property */
+
+.centertext {
+	text-align: center;
+}
+
+/* Bundling of common flexbox CSS properties */
+
+.productcontainer, .forumPost, .slideshow, .forumPost{
+	align-items: center;
+	justify-content: center;
+}
+
+figure {
+	align-items: center;
+}
+
+/* Bundling of commonly used layouts */ 
+
+/* Hover CSS */
+
+nav li:hover {
+	background-color: #ededed;
+}
+
+#search-wrapper > * > * > * input[type="submit"]:hover, button:hover, #submit:hover, #submitForumIssue:hover {
+	background-color: rgb(167, 204, 177);
+}
+
+nav li:hover, #search-wrapper > * > * > * input[type="submit"]:hover, button:hover, #submit:hover, #submitForumIssue:hover .prev:hover, .next:hover, #search-icon:hover {
+	cursor: pointer;
+}
+
+/* Background-Colors */
+
+nav, #search-wrapper > * > * > * input[type="submit"], button, legend, input[type="radio"]:checked, input[type="checkbox"]:checked, #submit, #submitForumIssue, #forumPostContainer, .commentContainer, #aboutUs > * {
+	background-color: rgb(190, 232, 201);
+}
+
+#here, caption, .shortTitles, #postIdentifier, #memberContainer > * {
+	background-color: #6cc251;
+}
+
+.userComment, .userPost, #comments, .forumPost, #modalWelcome > *, nav li {
+	background-color: white;
+}
+
+/* Paddings */
+
+#comments, #forumPostContainer { 
+	padding: 10px;
+}
+
+html, #memberContainer > * ul, ul{
+	padding: 0px;
+}
+
+.userComment, .userPost, .commentContainer, #search-wrapper > * > * > * input, nav li, button {
+  padding: 5px;
+}
+
+/* Margins */
+
+html, body, .prev, .next, #modalWelcome > * >* {
+	margin: 0px;
+}
+
+iframe, table, article h2, section h1, #forumPostContainer, #comments, #reviewTitle, .forumPost, #aboutUs > *, #memberContainer > *, .slideshowWrapper, form, #search-wrapper, .weatherwidget-io, #basketReset {
+	margin-left: auto;
+	margin-right: auto;
+}
+table, article h2, section h1, #reviewTitle, .product, .forumPost, .commentContainer:not(.commentContainer:last-of-type) {
+	margin-bottom: 30px;
+}
+
+nav li, #logo {
+	margin-right: 15px;
+}
+
+#privateReview, .slideshowTitle {
+	margin-bottom: 0px;
+}
+
+#aboutUs > *, #memberContainer > *, iframe, .weatherwidget-io {
+	margin-bottom: 15px;
+}
+
+#search-wrapper > * > * > * input[type="submit"] {
+	margin-left: 5px;
+}
+
+/* Borders */
+table, th, td, article h2, section h1, button, #reviewTitle, #submit, #submitForumIssue, #search-wrapper > * > * > * input[type="submit"], .userComment, .userPost img, .userPost, .commentContainer, .forumPost, #postIdentifier, #forumPostContainer, #memberContainer > * {
+	border: 2px solid black;
+}
+
+#aboutUs > *, legend {
+	border: 2px solid grey;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	border: 0.15em solid #6cc251;
+}
+
+/* Displays */
+
+nav ul, .contentWrapper > * {
+	display: inline-block;
+}
+
+#aboutUs, #memberContainer, .forumPost, figure, .productcontainer, .slideshow, #search-bar-wrapper{
+	display: flex;
+}
+
+/* Float */
+
+.userPost img, .userPost, .product, nav li, footer > * {
+	float: left;
+}
+
+/* Mobile CSS */
+
+.phone {
+	display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+	#logo {
+		left: -40%;
+		margin-bottom: -50px;
+	}
+
+	/* Navigation Based Layouts */
+
+	.phone, span {
+		display: block;
+	}
+
+	#burger {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	nav li {
+		display: none;
+	}
+
+	span {
+		height: 20px;
+		width: 100%;
+	}
+
+	.phoneNavLi {
+		float: none;
+		margin-bottom: 15px;
+		margin-right: 0px;
+	}
+	
+	ul {
+		padding: 0px;
+	}
+
+	/* Product Search */
+
+	#search-icon {
+		top: 15px;
+		left: 0px;
+	}
+
+	/* Product Slideshow Based Layout */
+
+	.slideshowTitle.singleprod {
+		margin-bottom: 30px;
+	}
+
+	div p.phone:first-of-type:not(p.singleprod) {
+		margin-top: -20px;
+		margin-bottom: 0px;
+	}
+
+	article.product {
+		display: none;
+	}
+
+	#threeprice {
+		display: block;
+	}
+
+	/* Forms */
+
+	fieldset:not(fieldset.nophonealignment) {
+		position: relative;
+		right: 10px;
+	}
+
+	#submit, #submitForumIssue {
+		width: 100%;
+		margin: 0px;
+	}
+
+	/* Text Based Layouts */
+	article h2, section h1 {
+		width: 300px;
+	}
+
+	.campingBrief {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Videos */
+	video {
+		width: 100%;
+		height: auto;
+	}
+
+	/* Images */
+
+	figure img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* Forum Layouts */
+
+	#forumPostTitle {
+		width: 300px;
+	}
+
+	#forumPostContainer {
+		display: none;
+	}
+
+	#phoneForumPostContainer{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(190, 232, 201);
+		padding: 10px;
+	}
+
+	#phonePostIdentifier {
+		width: 100%;
+		height: 50px;
+		margin-bottom:15px;
+		background-color: #6cc251;
+	}
+
+	.phoneForumPost {
+		width: 95%;
+	}
+
+	.phoneReviewProductText {
+		white-space: nowrap;
+		position: relative;
+		top: -2px;
+	}
+
+	#titleAlignment {
+		left: -20px;
+	}
+
+	.phoneContentWrapper {
+		text-align: center;
+		height: inherit;
+	}
+
+	.phoneForumPost > * p:last-of-type {
+		position: relative;
+		top: -30px;
+		left: 118px;
+	}
+
+  #phoneForumPostContainer a {
+		background-color: white;
+		height: 40px;
+		padding: 4px 0px 0px 4px;
+	}
+
+	.phoneContentWrapper > * {
+		float: left;
+		font-weight: 600;
+	}
+
+	.phoneImageContainer img {
+		position: relative;
+		top: 5px;
+	}
+
+	table {
+		width: 80%;
+	}
+
+	/* Camping Club */
+
+	#memberContainer {
+		flex-direction: column;
+	}
+
+	iframe {
+		height: 600px;
+	}
+
+	/* About Us */
+
+	#aboutUs {
+		flex-direction: column;
+	}
+
+	/* Bundling of content width */
+
+	.phoneContentWrapper > *:not(img), .imageContainer {
+		width: 120px;
+	}
+
+	#phoneForumPostTitle {
+		margin-bottom: 5px;
+		width: 500px;
+	}
+
+	/* Weather Plugin */
+	.weatherwidget-io {
+		width: 400px;
+	}
+
+	/* Borders */
+
+	#phonePostIdentifier, #phoneForumPostContainer, #phoneForumPostContainer a {
+		border: 2px solid black;
+	}
+
+	/* Margins */
+
+	div button, div p.phone:last-of-type, #oneprice, #phoneForumPostContainer a {
+		margin-bottom: 10px;
+	}
+
+	p.singleprod:last-of-type:not(p.singleprod:first-of-type), #threeprice, #phoneForumPostContainer a:last-of-type {
+		margin-top: 0px;
+	}
+
+	.campingBrief, #phoneForumPostContainer {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
